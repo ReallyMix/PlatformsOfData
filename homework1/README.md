@@ -16,3 +16,7 @@ Apache Hadoop HDFS 3.4.1 для команды `team-24`.
 Добавлена автоматическая проверка состояния кластера: доступность всех служб,
 регистрация трёх DataNode, отсутствие повреждённых блоков, запись и чтение
 тестового файла, наличие трёх реплик и проверка контрольной суммы.
+
+<img width="1280" height="378" alt="telegram-cloud-photo-size-2-5323477647339759042-y" src="https://github.com/user-attachments/assets/be2a1f52-5e67-4a96-af3c-9886a88b5908" />
+
+<img width="2559" height="1438" alt="telegram-cloud-document-2-5323477646879795784" src="https://github.com/user-attachments/assets/69445376-1228-4a7d-a925-16f1f6f6865a" />
