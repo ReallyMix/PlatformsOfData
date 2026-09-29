@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!-- Сгенерировано hdfs-cluster-deploy из templates/core-site.xml -->
+<configuration>
+  <!-- Адрес файловой системы по умолчанию = RPC NameNode -->
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://@NAMENODE_HOST@:@NN_RPC_PORT@</value>
+  </property>
+</configuration>

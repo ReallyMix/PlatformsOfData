@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!-- Сгенерировано hdfs-cluster-deploy из templates/hdfs-site.xml -->
+<configuration>
+  <!-- Число реплик блока: по одной на каждую из трёх DataNode -->
+  <property>
+    <name>dfs.replication</name>
+    <value>@DFS_REPLICATION@</value>
+  </property>
+
+  <!-- Каталоги хранения -->
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>file://@DATA_DIR@/nn</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>file://@DATA_DIR@/dn</value>
+  </property>
+  <property>
+    <name>dfs.namenode.checkpoint.dir</name>
+    <value>file://@DATA_DIR@/snn</value>
+  </property>
+
+  <!-- NameNode -->
+  <property>
+    <name>dfs.namenode.rpc-address</name>
+    <value>@NAMENODE_HOST@:@NN_RPC_PORT@</value>
+  </property>
+  <property>
+    <name>dfs.namenode.http-address</name>
+    <value>@NAMENODE_HOST@:@NN_HTTP_PORT@</value>
+  </property>
+  <!-- Слушать на всех интерфейсах: страховка от ситуации, когда имя узла
+       резолвится в 127.0.1.1 и DataNode не могут достучаться до NameNode -->
+  <property>
+    <name>dfs.namenode.rpc-bind-host</name>
+    <value>0.0.0.0</value>
+  </property>
+  <property>
+    <name>dfs.namenode.http-bind-host</name>
+    <value>0.0.0.0</value>
+  </property>
+
+  <!-- Secondary NameNode -->
+  <property>
+    <name>dfs.namenode.secondary.http-address</name>
+    <value>@SECONDARY_NAMENODE_HOST@:@SNN_HTTP_PORT@</value>
+  </property>
+</configuration>
