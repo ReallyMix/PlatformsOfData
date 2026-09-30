@@ -10,6 +10,7 @@
 | Дамир | [@ReallyMix](https://github.com/ReallyMix) |
 | Алексей | [@aveliaev](https://github.com/aveliaev) |
 | Михаил | [@MikhailTukmanbetov](https://github.com/MikhailTukmanbetov) |
+| Катя | [@kkkkkkkkkkatyyyy](https://github.com/kkkkkkkkkkatyyyy) |
 
 ##  Практические работы
 
