@@ -322,3 +322,11 @@ sudo -u hadoop /opt/hadoop/bin/yarn node -list
 Страница NodeManager на `team-24-00` (http://localhost:8043). Узел здоров (`NodeHealthyStatus = true`), под контейнеры выделено 2 ГБ физической памяти и 2 ядра, проверка виртуальной памяти отключена (`Vmem enforcement enabled = false`) — всё как в `yarn-site.xml`. Версия Hadoop — 3.4.1.
 
 <img width="2196" height="538" alt="image" src="https://github.com/user-attachments/assets/c6a80dcf-09e2-4110-b51d-8c3e9a10d5c4" />
+
+Выводы тестов при развертывании YARN:
+
+<img width="749" height="683" alt="image" src="https://github.com/user-attachments/assets/be74f2f8-7608-4cf8-abf8-f439be7c1e65" />
+
+<img width="694" height="708" alt="image" src="https://github.com/user-attachments/assets/9546fb4c-9aec-4044-a5b9-d0afaeac36ca" />
+
+<img width="888" height="483" alt="image" src="https://github.com/user-attachments/assets/ae8ec02f-6f05-4849-b42a-5f1cdc24c3e8" />
