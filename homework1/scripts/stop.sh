@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Остановка HDFS в обратном порядке: Secondary NameNode -> DataNode -> NameNode.
-# Запуск обратно: scripts/04-start.sh (повторного форматирования не будет).
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 log "остановка HDFS"

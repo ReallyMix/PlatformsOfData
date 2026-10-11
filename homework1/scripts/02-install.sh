@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Шаг 2. Установка на все узлы: /etc/hosts, пользователь hadoop, Java, Hadoop, каталоги.
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 log "Шаг 2/5: установка Java и Hadoop на все узлы"

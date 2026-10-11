@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Шаг 4. Форматирование NameNode (только первый раз) и запуск сервисов по порядку:
-#        NameNode -> DataNode x3 -> Secondary NameNode.
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 log "Шаг 4/5: форматирование и запуск HDFS"

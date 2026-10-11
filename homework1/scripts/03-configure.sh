@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Шаг 3. Генерация конфигов из templates/ и раскладка их на все узлы + systemd unit.
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 log "Шаг 3/5: конфигурация"

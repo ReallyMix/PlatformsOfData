@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
-# Шаг 5. Проверка целостности кластера:
-#   сервисы на узлах, 3 живые DataNode и 0 мёртвых, safe mode OFF,
-#   Secondary NameNode отвечает, запись/чтение файла с репликацией 3, логи без FATAL/ERROR.
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 fail=0
-expect() {  # expect <название> <получено> <ожидается>
+expect() {
     if [[ "$2" == "$3" ]]; then ok "$1 = $2"; else echo "${C_R}FAIL${C_0} $1 = ${2:-нет данных} (ожидалось $3)"; fail=1; fi
 }
 

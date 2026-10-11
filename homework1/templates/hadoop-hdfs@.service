@@ -1,4 +1,3 @@
-# Шаблонный unit: hadoop-hdfs@namenode, hadoop-hdfs@secondarynamenode, hadoop-hdfs@datanode
 [Unit]
 Description=Apache Hadoop HDFS %i
 Documentation=https://hadoop.apache.org/docs/r@HADOOP_VERSION@/

@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# Полное удаление HDFS со всех узлов, ВКЛЮЧАЯ ДАННЫЕ. Нужно, чтобы развернуть всё с нуля.
-#   scripts/destroy.sh          — спросит подтверждение
-#   scripts/destroy.sh --yes    — без вопросов
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 if [[ "${1:-}" != "--yes" ]]; then

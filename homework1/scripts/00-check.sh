@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Шаг 0. Проверка окружения: ключ, SSH и sudo на всех узлах, ресурсы, интернет на edge.
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 log "Шаг 0/5: проверка окружения"

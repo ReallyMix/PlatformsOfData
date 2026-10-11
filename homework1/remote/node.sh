@@ -1,12 +1,3 @@
-# ---------------------------------------------------------------------
-#  remote/node.sh — выполняется НА УЗЛЕ от root.
-#
-#  scripts/lib.sh склеивает config.env + этот файл в build/node.sh,
-#  копирует его на узел в /tmp/hdfs-deploy/ и запускает:
-#      sudo bash /tmp/hdfs-deploy/node.sh <действие> <имя-узла> [роли...]
-#
-#  Действия: install | configure | format | start | stop | status | logs | purge
-# ---------------------------------------------------------------------
 set -euo pipefail
 
 STAGE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -39,10 +30,6 @@ as_hadoop() { sudo -u "$HADOOP_USER" -- "$@"; }
 
 unit() { echo "hadoop-hdfs@$1.service"; }
 
-# ---------------------------------------------------------------- install
-
-# Прописывает все узлы кластера в /etc/hosts и убирает привязку их имён
-# к 127.0.x.x (иначе NameNode/DataNode слушают loopback и не видят друг друга).
 fix_hosts() {
     local entry names="" ips="" tmp
     for entry in $CLUSTER_HOSTS; do
@@ -102,7 +89,6 @@ create_user() {
     fi
 }
 
-# install_tarball <архив в dist/> <каталог установки> <симлинк> <файл-проверка>
 install_tarball() {
     local file=$1 dir=$2 link=$3 check=$4
     local tgz="$STAGE_DIR/dist/$file"
@@ -146,8 +132,6 @@ EOF
     log "Hadoop: $("$HADOOP_HOME/bin/hadoop" version 2>/dev/null | sed -n 1p)"
 }
 
-# -------------------------------------------------------------- configure
-
 do_configure() {
     local conf="$HADOOP_HOME/etc/hadoop" f r
     [[ -x "$HADOOP_HOME/bin/hdfs" ]] || die "Hadoop не установлен (сначала scripts/02-install.sh)"
@@ -156,7 +140,6 @@ do_configure() {
         install -m 644 "$STAGE_DIR/conf/$f" "$conf/$f"
     done
 
-    # hadoop-env.sh и log4j.properties: оригинал + наш блок (идемпотентно)
     if [[ ! -f "$conf/hadoop-env.sh.orig" ]]; then cp -p "$conf/hadoop-env.sh" "$conf/hadoop-env.sh.orig"; fi
     { cat "$conf/hadoop-env.sh.orig"; echo; cat "$STAGE_DIR/conf/hadoop-env.sh"; } > "$conf/hadoop-env.sh"
 
@@ -178,8 +161,6 @@ do_configure() {
     log "конфигурация применена, роли узла: $(my_roles)"
 }
 
-# ----------------------------------------------------------------- format
-
 do_format() {
     has_role namenode || die "этот узел не NameNode"
     local version="$DATA_DIR/nn/current/VERSION"
@@ -196,8 +177,6 @@ do_format() {
     [[ -f "$version" ]] || die "после форматирования нет $version"
     log "NameNode отформатирована"
 }
-
-# ------------------------------------------------------------ start / stop
 
 show_failure() {
     local r=$1
@@ -224,8 +203,6 @@ do_stop() {
         systemctl stop "$(unit "$r")" || true
     done
 }
-
-# ---------------------------------------------------------- status / logs
 
 do_status() {
     local r expected rc=0 roles jps_out
@@ -256,8 +233,6 @@ do_status() {
     return $rc
 }
 
-# Ищет ERROR/FATAL в текущих логах демонов. Строки "RECEIVED SIGNAL 15: SIGTERM"
-# пишутся с уровнем ERROR при штатной остановке — их не считаем.
 do_logs() {
     shopt -s nullglob
     local r active cutoff file matches="" role_matches files=() n_err n_fatal
@@ -290,8 +265,6 @@ do_logs() {
     return 0
 }
 
-# ------------------------------------------------------------------ purge
-
 do_purge() {
     local r l
     for r in secondarynamenode datanode namenode; do
@@ -309,8 +282,6 @@ do_purge() {
     done
     log "HDFS, Java, данные и логи удалены (пользователь $HADOOP_USER и /etc/hosts оставлены)"
 }
-
-# ------------------------------------------------------------------- main
 
 main() {
     cd /

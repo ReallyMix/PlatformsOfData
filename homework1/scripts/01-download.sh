@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
-# Шаг 1. Скачивание JDK (Eclipse Temurin) и Hadoop с проверкой контрольных сумм.
-# Внутренним узлам интернет не нужен: архивы раздаются с edge через scp.
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 log "Шаг 1/5: загрузка дистрибутивов в $DIST_DIR"
 mkdir -p "$DIST_DIR"
 
-# --- JDK ---
 case "$(uname -m)" in
     x86_64)  jarch=x64 ;;
     aarch64) jarch=aarch64 ;;
@@ -37,7 +34,6 @@ else
     ok "JDK: $jdk (SHA-256 совпадает)"
 fi
 
-# --- Hadoop ---
 name="hadoop-$HADOOP_VERSION.tar.gz"
 tgz="$DIST_DIR/$name"
 if [[ ! -s "$tgz" ]]; then
