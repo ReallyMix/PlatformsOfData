@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!-- Сгенерировано из homework2/templates/mapred-site.xml -->
+<configuration>
+  <!-- Запускать задачи MapReduce в YARN, а не локально -->
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+
+  <!-- Без этих переменных контейнер не находит классы MapReduce
+       (ошибка "Could not find or load main class MRAppMaster") -->
+  <property>
+    <name>yarn.app.mapreduce.am.env</name>
+    <value>HADOOP_MAPRED_HOME=@HADOOP_HOME@</value>
+  </property>
+  <property>
+    <name>mapreduce.map.env</name>
+    <value>HADOOP_MAPRED_HOME=@HADOOP_HOME@</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.env</name>
+    <value>HADOOP_MAPRED_HOME=@HADOOP_HOME@</value>
+  </property>
+  <property>
+    <name>mapreduce.application.classpath</name>
+    <value>@HADOOP_HOME@/share/hadoop/mapreduce/*:@HADOOP_HOME@/share/hadoop/mapreduce/lib/*</value>
+  </property>
+
+  <!-- Память контейнеров. Размер кучи Java для map/reduce Hadoop вычисляет
+       сам (80% от памяти контейнера), для ApplicationMaster задаём явно. -->
+  <property>
+    <name>yarn.app.mapreduce.am.resource.mb</name>
+    <value>@AM_MEMORY_MB@</value>
+  </property>
+  <property>
+    <name>yarn.app.mapreduce.am.command-opts</name>
+    <value>-Xmx@AM_HEAP_MB@m</value>
+  </property>
+  <property>
+    <name>mapreduce.map.memory.mb</name>
+    <value>@MAP_MEMORY_MB@</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.memory.mb</name>
+    <value>@REDUCE_MEMORY_MB@</value>
+  </property>
+
+  <!-- JobHistory Server -->
+  <property>
+    <name>mapreduce.jobhistory.address</name>
+    <value>@HISTORYSERVER_HOST@:@JHS_RPC_PORT@</value>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.webapp.address</name>
+    <value>@HISTORYSERVER_HOST@:@JHS_HTTP_PORT@</value>
+  </property>
+  <property>
+    <name>mapreduce.jobhistory.bind-host</name>
+    <value>0.0.0.0</value>
+  </property>
+</configuration>

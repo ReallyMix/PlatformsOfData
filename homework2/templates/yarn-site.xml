@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!-- Сгенерировано из homework2/templates/yarn-site.xml -->
+<configuration>
+  <!-- ResourceManager: по этому имени к нему обращаются NodeManager и клиенты -->
+  <property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>@RESOURCEMANAGER_HOST@</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>@RESOURCEMANAGER_HOST@:@RM_RPC_PORT@</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.webapp.address</name>
+    <value>@RESOURCEMANAGER_HOST@:@RM_HTTP_PORT@</value>
+  </property>
+  <!-- Слушать на всех интерфейсах (как NameNode в ДЗ №1) -->
+  <property>
+    <name>yarn.resourcemanager.bind-host</name>
+    <value>0.0.0.0</value>
+  </property>
+
+  <!-- NodeManager: вспомогательный сервис shuffle нужен MapReduce,
+       чтобы reduce-задачи забирали результаты map-задач -->
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+    <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+  </property>
+  <!-- Переменные окружения, которые NodeManager передаёт в контейнеры -->
+  <property>
+    <name>yarn.nodemanager.env-whitelist</name>
+    <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ,HADOOP_MAPRED_HOME</value>
+  </property>
+
+  <!-- Сколько ресурсов узел отдаёт под контейнеры -->
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>@NM_MEMORY_MB@</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.resource.cpu-vcores</name>
+    <value>@NM_VCORES@</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+    <value>256</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>@NM_MEMORY_MB@</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-vcores</name>
+    <value>@NM_VCORES@</value>
+  </property>
+  <!-- Проверка виртуальной памяти на маленьких ВМ ложно убивает контейнеры -->
+  <property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
+  </property>
+
+  <!-- Рабочие каталоги контейнеров и их логи -->
+  <property>
+    <name>yarn.nodemanager.local-dirs</name>
+    <value>@DATA_DIR@/yarn/local</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.log-dirs</name>
+    <value>@LOG_DIR@/userlogs</value>
+  </property>
+
+  <!-- После завершения задачи логи контейнеров собираются в HDFS,
+       а посмотреть их можно через JobHistory Server -->
+  <property>
+    <name>yarn.log-aggregation-enable</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>yarn.log.server.url</name>
+    <value>http://@HISTORYSERVER_HOST@:@JHS_HTTP_PORT@/jobhistory/logs</value>
+  </property>
+</configuration>
