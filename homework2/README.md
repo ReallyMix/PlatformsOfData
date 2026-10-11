@@ -297,28 +297,28 @@ sudo -u hadoop /opt/hadoop/bin/yarn node -list
 
 Страница **Nodes** (http://localhost:8088/cluster/nodes). В кластере 3 активных узла (`Active Nodes = 3`), потерянных, нездоровых и выведенных из эксплуатации нет. Все три NodeManager — на `team-24-nn`, `team-24-00` и `team-24-01` — в состоянии **RUNNING**, каждый отдаёт под контейнеры 2 ГБ памяти и 2 ядра, всего в кластере 6 ГБ и 6 ядер. Максимальный размер контейнера (2048 МБ, 2 ядра) совпадает с настройками из `config.env`.
 
-![alt text](image.png)
+<img width="2682" height="970" alt="image" src="https://github.com/user-attachments/assets/4e61b00b-17a6-4211-9a60-1985e4a8b4e3" />
 
 ### ResourceManager: приложения
 
 Страница **Applications** (http://localhost:8088/cluster/apps). Тестовая задача `QuasiMonteCarlo` (вычисление числа Pi) типа `MAPREDUCE`, запущенная скриптом проверки от пользователя `hadoop`, выполнилась в YARN: состояние **FINISHED**, итоговый статус **SUCCEEDED**.
 
-![alt text](image-1.png)
+<img width="2556" height="770" alt="image" src="https://github.com/user-attachments/assets/acc75dd0-9102-4d31-8d26-015142a59123" />
 
 ### JobHistory Server: история задач
 
 Вспомогательный демон JobHistory Server (http://localhost:19888/jobhistory) сохранил историю той же задачи `job_1791735894567_0001`: статус **SUCCEEDED**, выполнены 3 из 3 map-задач и 1 из 1 reduce-задачи, время выполнения — 24 секунды. Значит, MapReduce полностью работает в YARN, включая этап shuffle между map и reduce.
 
-![alt text](image-2.png)
+<img width="2668" height="552" alt="image" src="https://github.com/user-attachments/assets/fe57246c-4ef4-451d-ba0e-b9556cb0b3e2" />
 
 ### NameNode: DataNode
 
 Вкладка **Datanodes** NameNode (http://localhost:9870/dfshealth.html#tab-datanode) показывает, что через nginx опубликован и интерфейс HDFS: все три DataNode в состоянии **In service**. В HDFS появились блоки — это файлы, которые записала тестовая задача (её входные данные и история для JobHistory Server).
 
-![alt text](image-3.png)
+<img width="1660" height="1364" alt="image" src="https://github.com/user-attachments/assets/a31c35ae-956a-4be0-8649-8ffdb252c0b1" />
 
 ### NodeManager на узле team-24-00
 
 Страница NodeManager на `team-24-00` (http://localhost:8043). Узел здоров (`NodeHealthyStatus = true`), под контейнеры выделено 2 ГБ физической памяти и 2 ядра, проверка виртуальной памяти отключена (`Vmem enforcement enabled = false`) — всё как в `yarn-site.xml`. Версия Hadoop — 3.4.1.
 
-![alt text](image-4.png)
+<img width="2196" height="538" alt="image" src="https://github.com/user-attachments/assets/c6a80dcf-09e2-4110-b51d-8c3e9a10d5c4" />
