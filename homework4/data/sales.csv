@@ -1,0 +1,442 @@
+event_time,city,category,product,price,quantity
+2026-10-01 10:00:54,SAINT PETERSBURG,books,comics,462.80,1
+2026-10-01 12:07:57,Saint Petersburg,electronics,monitor,17491.63,2
+2026-10-01 12:27:46,Novosibirsk,books,textbook,1920.26,4
+2026-10-01 16:19:11,Kazan,clothes,jeans,3571.62,2
+2026-10-01 12:49:38,Moscow,books,novel,661.11,1
+2026-10-01 22:31:31,Novosibirsk,clothes,t-shirt,1305.35,4
+2026-10-01 22:15:17,SAINT PETERSBURG,books,novel,707.88,3
+2026-10-01 14:17:51,Novosibirsk,books,comics,466.80,4
+2026-10-01 08:59:27,Kazan,clothes,jacket,8131.92,4
+2026-10-01 19:59:09,Moscow,books,novel,706.68,4
+2026-10-01 08:05:31,Novosibirsk,clothes,jacket,7341.74,1
+2026-10-01 20:34:05,Novosibirsk,books,textbook,1817.18,1
+2026-10-01 11:10:01,Saint Petersburg,electronics,keyboard,3627.20,4
+2026-10-01 17:49:45,SAINT PETERSBURG,electronics,monitor,18097.60,4
+2026-10-01 11:17:48,Moscow,books,novel,627.69,1
+2026-10-01 21:33:24,Saint Petersburg,clothes,jeans,3245.86,2
+2026-10-01 08:47:53,Kazan,books,comics,451.92,1
+2026-10-01 13:27:38,Saint Petersburg,clothes,jeans,3180.48,3
+2026-10-01 21:32:18,Novosibirsk,electronics,headphones,6292.27,4
+2026-10-01 13:32:44,Novosibirsk,books,textbook,2005.00,4
+2026-10-01 15:10:12,MOSCOW,electronics,keyboard,3992.45,1
+2026-10-01 18:07:04,Moscow,clothes,jacket,7753.97,4
+2026-10-01 13:45:11,Saint Petersburg,clothes,t-shirt,1315.59,2
+2026-10-01 18:40:45,Novosibirsk,electronics,monitor,17379.47,2
+2026-10-01 15:26:32,Saint Petersburg,books,novel,627.46,1
+2026-10-01 11:18:21,Moscow,electronics,keyboard,3743.36,3
+2026-10-01 19:10:15,Moscow,electronics,mouse,1519.68,4
+2026-10-01 15:22:38,Saint Petersburg,books,textbook,1917.69,2
+2026-10-01 16:26:13,Moscow,books,comics,482.01,3
+2026-10-01 11:03:38,Moscow,electronics,headphones,5916.41,3
+2026-10-01 16:13:09,Moscow,books,novel,689.71,2
+2026-10-01 13:30:51,Saint Petersburg,books,textbook,1756.80,1
+2026-10-01 08:25:05,Saint Petersburg,clothes,jeans,3682.02,2
+2026-10-01 21:39:12,Moscow,electronics,keyboard,4341.44,1
+2026-10-01 13:55:16,Moscow,clothes,jacket,7447.57,1
+2026-10-01 13:47:52,Novosibirsk,clothes,jeans,3640.04,3
+2026-10-01 19:54:00,Saint Petersburg,electronics,monitor,19410.47,4
+2026-10-01 10:14:48,Novosibirsk,books,textbook,2069.88,3
+2026-10-01 09:11:14,Novosibirsk,electronics,keyboard,4103.56,2
+2026-10-01 18:14:46,NOVOSIBIRSK,electronics,mouse,1452.99,2
+2026-10-01 09:05:44,Moscow,books,comics,468.90,3
+2026-10-01 19:07:32, Novosibirsk,clothes,jacket,8425.90,2
+2026-10-01 18:42:48,Moscow,clothes,jeans,3534.43,3
+2026-10-01 08:07:55,Saint Petersburg,books,comics,406.61,1
+2026-10-01 18:06:29,Kazan,books,novel,622.66,3
+2026-10-01 18:50:01,Kazan,clothes,jeans,3292.15,3
+2026-10-01 18:12:18,Kazan,books,textbook,1922.34,3
+2026-10-01 13:34:31,Moscow,books,comics,424.71,3
+2026-10-01 17:43:38,Moscow,clothes,jeans,3179.07,3
+2026-10-01 13:38:26,Moscow,clothes,jacket,7948.04,4
+2026-10-01 16:01:24,Saint Petersburg,books,novel,626.60,2
+2026-10-01 18:24:12,Novosibirsk,books,novel,639.83,1
+2026-10-01 11:21:18,Kazan,clothes,t-shirt,1414.57,1
+2026-10-01 16:28:54,saint petersburg,electronics,monitor,19556.42,2
+2026-10-01 19:56:42,Novosibirsk,clothes,t-shirt,1185.62,1
+2026-10-01 16:51:58,Saint Petersburg,clothes,jeans,3309.64,3
+2026-10-01 09:08:13,Novosibirsk,electronics,monitor,20383.57,1
+2026-10-01 20:13:08,Moscow,clothes,jeans,3701.95,3
+2026-10-01 20:42:19,Kazan,clothes,t-shirt,1187.04,3
+2026-10-01 08:14:42,Novosibirsk,clothes,jacket,8301.87,1
+2026-10-01 18:10:24,Moscow,books,comics,427.70,2
+2026-10-01 13:51:44,Novosibirsk,electronics,mouse,1568.45,1
+2026-10-01 08:33:40,Kazan,electronics,mouse,1428.90,4
+2026-10-01 11:41:25,Novosibirsk,electronics,keyboard,4113.34,3
+2026-10-01 17:42:45,Novosibirsk,clothes,jeans,3646.67,3
+2026-10-01 22:59:21,Kazan,books,novel,625.35,2
+2026-10-01 08:01:10,Moscow,electronics,headphones,6270.93,1
+2026-10-02 18:13:36,KAZAN,electronics,mouse,1563.20,4
+2026-10-02 09:58:41,Saint Petersburg,clothes,jacket,8419.50,2
+2026-10-02 22:32:57,Saint Petersburg,books,comics,457.04,1
+2026-10-02 13:23:46,Saint Petersburg,clothes,jacket,8334.05,4
+2026-10-02 12:15:47,Saint Petersburg,clothes,jeans,3435.76,3
+2026-10-02 16:19:08,Novosibirsk,clothes,t-shirt,1401.43,1
+2026-10-02 22:11:40,kazan,electronics,mouse,1504.65,1
+2026-10-02 08:41:51,Novosibirsk,books,textbook,2072.61,1
+2026-10-02 20:01:53,novosibirsk,electronics,monitor,19114.94,4
+2026-10-02 17:43:45,Kazan,clothes,jeans,3646.55,4
+2026-10-02 09:05:11,Novosibirsk,electronics,monitor,18296.48,1
+2026-10-02 17:20:02,Moscow,clothes,jeans,3163.14,4
+2026-10-02 09:21:17,moscow,electronics,mouse,1618.89,3
+2026-10-02 14:47:23,Saint Petersburg,electronics,monitor,17885.89,2
+2026-10-02 13:22:18,Novosibirsk,electronics,headphones,6287.65,2
+2026-10-02 13:37:10,Moscow,books,comics,487.53,2
+2026-10-02 20:37:40,Saint Petersburg,electronics,monitor,17297.69,3
+2026-10-02 20:01:17,moscow,electronics,keyboard,3605.83,4
+2026-10-02 17:43:18,Novosibirsk,books,novel,660.31,4
+2026-10-02 13:00:27,Kazan,electronics,headphones,6568.28,4
+2026-10-02 14:27:01,Kazan,books,novel,724.08,4
+2026-10-02 21:29:17,Kazan,clothes,t-shirt,1286.16,2
+2026-10-02 21:20:37,Novosibirsk,books,comics,413.18,2
+2026-10-02 17:48:13,SAINT PETERSBURG,books,textbook,2019.54,4
+2026-10-02 22:14:54,Moscow,clothes,jeans,3225.40,2
+2026-10-02 22:57:16,Kazan,electronics,monitor,17844.68,1
+2026-10-02 14:58:17,NOVOSIBIRSK,electronics,monitor,18375.44,1
+2026-10-02 12:43:19,Novosibirsk,electronics,keyboard,4244.09,two
+2026-10-02 12:17:07,Novosibirsk,books,novel,705.53,4
+2026-10-02 08:00:57,Novosibirsk,clothes,jeans,3433.34,4
+2026-10-02 15:33:40,Kazan,clothes,jeans,3332.44,3
+2026-10-02 13:37:58,Moscow,books,textbook,2022.59,4
+2026-10-02 08:06:10,Novosibirsk,books,novel,707.06,4
+2026-10-02 21:08:11,moscow,clothes,t-shirt,1281.56,1
+2026-10-02 11:44:14,Moscow,electronics,mouse,1624.96,4
+2026-10-02 09:48:55,Kazan,books,textbook,2035.90,2
+2026-10-02 20:20:44,moscow,electronics,mouse,1435.04,1
+2026-10-02 20:07:03,Saint Petersburg,clothes,t-shirt,1175.34,1
+2026-10-02 19:05:16, Kazan,clothes,jacket,7628.67,4
+2026-10-02 10:02:56,Saint Petersburg,clothes,jeans,3343.31,2
+2026-10-02 15:54:29,Novosibirsk,books,novel,633.35,3
+2026-10-02 11:26:18,Saint Petersburg,books,novel,739.60,1
+2026-10-02 11:03:40, Novosibirsk,books,comics,461.82,3
+2026-10-02 15:50:32,Moscow,electronics,monitor,19290.57,3
+2026-10-02 08:38:03,Moscow,clothes,jacket,8590.38,1
+2026-10-02 15:28:02,Moscow,clothes,jeans,3549.18,1
+2026-10-02 14:12:14,Saint Petersburg,electronics,headphones,6094.50,2
+2026-10-02 11:47:04,Kazan,electronics,monitor,17567.17,1
+2026-10-02 14:21:54,Novosibirsk,clothes,jeans,3715.70,3
+2026-10-02 10:32:49,Novosibirsk,electronics,mouse,1500.64,2
+2026-10-02 11:52:08,Saint Petersburg,books,novel,660.25,4
+2026-10-02 16:01:10,Saint Petersburg,clothes,jacket,8390.70,3
+2026-10-02 12:28:56,novosibirsk,electronics,monitor,19735.71,4
+2026-10-02 12:13:39,SAINT PETERSBURG,clothes,jeans,3630.04,2
+2026-10-02 22:33:15,Novosibirsk,clothes,jacket,7598.88,4
+2026-10-02 10:42:56,Saint Petersburg,clothes,jacket,8540.19,3
+2026-10-02 14:30:14,Novosibirsk,books,textbook,1944.22,1
+2026-10-02 19:33:54,Saint Petersburg,electronics,mouse,1465.40,2
+2026-10-02 09:15:05,Kazan,books,comics,450.43,4
+2026-10-02 11:10:29,Saint Petersburg,clothes,jacket,8267.41,2
+2026-10-02 20:25:45,Saint Petersburg,electronics,monitor,17148.84,3
+2026-10-02 13:54:14,Novosibirsk,clothes,jeans,3435.30,3
+2026-10-02 16:58:49,Saint Petersburg,electronics,mouse,1410.55,3
+2026-10-02 16:30:08,Saint Petersburg,books,comics,426.60,1
+2026-10-02 13:15:46,Novosibirsk,electronics,headphones,5457.23,2
+2026-10-02 17:45:23,Moscow,electronics,keyboard,4225.39,3
+2026-10-03 22:12:56,novosibirsk,electronics,monitor,19245.06,1
+2026-10-03 15:05:58,Saint Petersburg,books,novel,735.85,2
+2026-10-03 16:46:49,Saint Petersburg,clothes,jacket,7452.69,4
+2026-10-03 17:22:42,Kazan,clothes,t-shirt,1187.74,3
+2026-10-03 15:53:27,Kazan,books,textbook,1726.50,1
+2026-10-03 11:11:41,Moscow,clothes,jacket,7995.93,1
+2026-10-03 17:45:30,Novosibirsk,clothes,jacket,7327.41,1
+2026-10-03 08:39:38,Kazan,electronics,headphones,5879.39,4
+2026-10-03 20:02:55,Saint Petersburg,books,comics,465.56,2
+2026-10-03 20:15:33,Moscow,clothes,jeans,3337.55,4
+2026-10-03 21:52:12,Kazan,books,comics,466.16,4
+2026-10-03 08:39:22,Kazan,electronics,mouse,1499.73,2
+2026-10-03 09:31:10,Moscow,electronics,monitor,18252.85,4
+2026-10-03 13:54:41,Saint Petersburg,electronics,monitor,17916.43,2
+2026-10-03 14:35:59,Saint Petersburg,electronics,mouse,1627.64,4
+2026-10-03 14:28:05,Saint Petersburg,clothes,jacket,7915.22,2
+2026-10-03 20:55:01,Moscow,electronics,headphones,5896.39,3
+2026-10-03 13:36:48,moscow,electronics,monitor,18783.26,3
+2026-10-03 16:15:07,Saint Petersburg,books,comics,465.68,3
+2026-10-03 14:57:05,Moscow,clothes,jeans,3797.78,3
+2026-10-03 08:29:49,Novosibirsk,books,textbook,2027.38,1
+2026-10-03 21:25:21,Novosibirsk,clothes,t-shirt,1319.54,1
+2026-10-03 15:49:30,Saint Petersburg,electronics,headphones,6439.33,4
+2026-10-03 20:03:32,Kazan,electronics,mouse,1544.27,2
+2026-10-03 17:05:52,Novosibirsk,electronics,keyboard,4145.79,3
+2026-10-03 19:38:04,Saint Petersburg,clothes,t-shirt,1258.13,2
+2026-10-03 16:37:14,Saint Petersburg,electronics,headphones,6511.23,2
+2026-10-03 09:13:21,Saint Petersburg,electronics,keyboard,4016.47,4
+2026-10-03 17:13:18,Kazan,electronics,monitor,18668.28,1
+2026-10-03 10:39:48,Novosibirsk,electronics,monitor,20797.72,2
+2026-10-03 21:25:52,Moscow,books,comics,456.10,4
+2026-10-03 19:54:52,Novosibirsk,books,novel,655.19,4
+2026-10-03 13:22:01,Kazan,clothes,jacket,7635.77,2
+2026-10-03 09:39:04,Saint Petersburg,electronics,headphones,,4
+2026-10-03 18:41:52,Saint Petersburg,electronics,keyboard,3933.07,1
+2026-10-03 10:51:45,Novosibirsk,books,textbook,1940.22,4
+2026-10-03 19:22:04,kazan,books,textbook,1754.34,3
+2026-10-03 09:18:53,Moscow,electronics,keyboard,3916.42,1
+2026-10-03 11:36:00,Saint Petersburg,books,novel,665.86,two
+2026-10-03 12:18:58,Kazan,electronics,monitor,17832.50,1
+2026-10-03 17:51:21,moscow,books,novel,680.30,4
+2026-10-03 21:16:31,Saint Petersburg,books,comics,424.60,1
+2026-10-03 10:54:18,SAINT PETERSBURG,clothes,jacket,7556.32,1
+2026-10-03 19:45:41,Kazan,electronics,keyboard,3592.15,4
+2026-10-03 10:00:03, Kazan,electronics,mouse,1463.53,4
+2026-10-03 08:30:04,Saint Petersburg,electronics,monitor,17940.42,2
+2026-10-03 22:59:17,Saint Petersburg,clothes,t-shirt,1377.58,1
+2026-10-03 11:19:31,Novosibirsk,clothes,jacket,8043.61,3
+2026-10-03 08:49:56,Moscow,books,textbook,2033.88,1
+2026-10-03 10:02:43,Saint Petersburg,electronics,keyboard,4091.24,1
+2026-10-04 15:10:46,Novosibirsk,clothes,jacket,8285.94,4
+2026-10-04 11:31:19,Moscow,clothes,jacket,7481.22,4
+2026-10-04 18:08:59,Moscow,clothes,t-shirt,1401.97,4
+2026-10-04 12:27:22,Moscow,books,comics,444.47,1
+2026-10-04 16:03:11,Novosibirsk,books,textbook,1714.24,1
+2026-10-04 14:34:27,MOSCOW,electronics,monitor,18300.40,4
+2026-10-04 19:52:10,Kazan,electronics,headphones,6205.50,1
+2026-10-04 17:52:36,Saint Petersburg,clothes,jacket,8308.86,4
+2026-10-04 09:16:00,Kazan,books,comics,492.94,1
+2026-10-04 09:11:20,Moscow,clothes,jeans,3178.53,1
+2026-10-04 19:47:56,Kazan,electronics,monitor,18016.06,4
+2026-10-04 11:46:04,Novosibirsk,books,textbook,1763.41,2
+2026-10-04 11:25:24,Novosibirsk,clothes,jeans,3319.87,2
+2026-10-04 14:05:43, Moscow,books,novel,738.83,3
+2026-10-04 17:20:49,Novosibirsk,clothes,jeans,3652.83,3
+2026-10-04 12:47:19,Saint Petersburg,electronics,mouse,1385.71,4
+2026-10-04 14:07:17,Kazan,clothes,jeans,3669.78,1
+2026-10-04 09:47:26,Kazan,electronics,headphones,5698.83,2
+2026-10-04 20:38:15,Novosibirsk,electronics,monitor,18180.75,3
+2026-10-04 19:22:06,MOSCOW,books,comics,478.55,1
+2026-10-04 22:01:27,Novosibirsk,books,novel,,4
+2026-10-04 19:06:03,Saint Petersburg,electronics,headphones,5981.05,3
+2026-10-04 10:49:26,Novosibirsk,electronics,keyboard,3773.88,3
+2026-10-04 21:42:30,Saint Petersburg,books,novel,674.54,1
+2026-10-04 10:00:14,Saint Petersburg,books,comics,452.85,2
+2026-10-04 21:31:34,Novosibirsk,electronics,mouse,1583.95,4
+2026-10-04 10:17:07, Kazan,clothes,t-shirt,1336.79,3
+2026-10-04 10:55:57,Kazan,books,comics,473.44,3
+2026-10-04 18:29:42,Kazan,books,comics,462.50,1
+2026-10-04 16:31:55,Kazan,electronics,monitor,17210.02,3
+2026-10-04 20:35:33,Kazan,clothes,jacket,8273.06,3
+2026-10-04 10:44:49,Saint Petersburg,clothes,t-shirt,1390.72,3
+2026-10-04 17:19:36,Saint Petersburg,books,textbook,1844.20,1
+2026-10-04 19:52:37,Saint Petersburg,electronics,headphones,5799.65,2
+2026-10-04 22:34:11,Kazan,books,textbook,1828.53,2
+2026-10-04 22:45:24,Kazan,electronics,keyboard,4012.16,1
+2026-10-04 17:43:28,Kazan,electronics,monitor,18100.36,1
+2026-10-04 20:28:36,Saint Petersburg,clothes,jeans,3176.15,3
+2026-10-04 11:38:20,Novosibirsk,clothes,jeans,3298.68,3
+2026-10-04 15:20:01,Novosibirsk,clothes,jacket,8031.08,3
+2026-10-04 12:03:02,Saint Petersburg,clothes,jeans,3698.01,3
+2026-10-04 22:20:21,Saint Petersburg,books,textbook,2018.51,1
+2026-10-04 12:53:49,Saint Petersburg,clothes,jacket,7873.48,3
+2026-10-04 11:21:35,Novosibirsk,clothes,jacket,7252.08,1
+2026-10-04 10:00:53,Novosibirsk,books,comics,443.95,1
+2026-10-04 14:09:27,Moscow,clothes,t-shirt,1175.86,1
+2026-10-04 14:27:19,Novosibirsk,electronics,keyboard,4341.67,2
+2026-10-04 11:27:31, Kazan,electronics,headphones,5912.55,4
+2026-10-04 08:13:37,Kazan,electronics,keyboard,3775.26,3
+2026-10-04 22:21:18,Kazan,electronics,keyboard,3674.43,2
+2026-10-04 19:02:14,Moscow,clothes,jeans,3505.46,2
+2026-10-04 14:04:47,Saint Petersburg,electronics,headphones,5589.93,1
+2026-10-04 15:56:03,Moscow,books,novel,638.76,3
+2026-10-04 12:14:39,Kazan,books,textbook,2078.57,2
+2026-10-04 16:37:48,Saint Petersburg,electronics,headphones,6130.84,3
+2026-10-04 16:15:42,Kazan,electronics,keyboard,4335.06,2
+2026-10-04 09:03:18,Moscow,electronics,mouse,1524.76,3
+2026-10-04 11:49:48, Kazan,books,novel,732.97,2
+2026-10-04 12:15:14,Moscow,electronics,mouse,1402.88,2
+2026-10-04 21:39:23,Moscow,books,novel,712.59,1
+2026-10-05 15:58:51,MOSCOW,books,comics,465.00,1
+2026-10-05 08:20:01,Saint Petersburg,electronics,headphones,5936.41,1
+2026-10-05 22:22:27,Saint Petersburg,books,comics,416.56,2
+2026-10-05 21:10:36,Moscow,electronics,headphones,6151.58,1
+2026-10-05 10:19:46,Kazan,clothes,jeans,3661.74,1
+2026-10-05 17:17:16,Moscow,clothes,jeans,3517.64,2
+2026-10-05 10:34:05,Novosibirsk,books,textbook,1718.52,1
+2026-10-05 18:24:54,Moscow,books,comics,471.89,1
+2026-10-05 09:34:06,Novosibirsk,books,textbook,1732.56,3
+2026-10-05 17:42:54,Saint Petersburg,books,novel,655.98,1
+2026-10-05 14:33:33,Novosibirsk,electronics,mouse,1624.88,1
+2026-10-05 16:36:41,Novosibirsk,books,textbook,2048.56,2
+2026-10-05 15:15:45,Novosibirsk,books,novel,,4
+2026-10-05 20:01:06,Kazan,clothes,jeans,3336.68,4
+2026-10-05 16:08:32,novosibirsk,books,textbook,1780.51,2
+2026-10-05 15:21:07,Moscow,electronics,monitor,20592.14,3
+2026-10-05 11:27:56,Novosibirsk,electronics,keyboard,3905.13,4
+2026-10-05 12:19:09,Kazan,electronics,keyboard,3936.06,3
+2026-10-05 19:38:56,Novosibirsk,books,textbook,,2
+2026-10-05 09:15:17,Saint Petersburg,electronics,mouse,1438.62,4
+2026-10-05 18:44:38,Novosibirsk,clothes,jeans,3220.86,2
+2026-10-05 16:42:50,Moscow,books,novel,684.92,3
+2026-10-05 15:48:07,Moscow,clothes,t-shirt,1190.06,3
+2026-10-05 13:26:55,MOSCOW,clothes,jeans,3792.98,2
+2026-10-05 22:42:09,Moscow,clothes,jacket,8185.91,4
+2026-10-05 10:55:16,Novosibirsk,clothes,jeans,3174.48,4
+2026-10-05 22:05:28,Moscow,books,novel,663.86,3
+2026-10-05 15:44:38, Moscow,books,comics,440.87,1
+2026-10-05 21:40:32,Moscow,clothes,jacket,8556.33,4
+2026-10-05 20:04:43,Moscow,electronics,keyboard,3850.50,2
+2026-10-05 15:53:21,Novosibirsk,books,novel,677.57,3
+2026-10-05 15:05:28,Saint Petersburg,clothes,jacket,7226.02,4
+2026-10-05 21:48:41,Kazan,electronics,headphones,6088.28,3
+2026-10-05 22:00:50,Novosibirsk,clothes,jeans,3335.43,3
+2026-10-05 11:29:19,Kazan,clothes,jeans,3816.33,1
+2026-10-05 17:51:28,NOVOSIBIRSK,electronics,mouse,1590.89,1
+2026-10-05 13:24:31,Moscow,books,novel,712.64,1
+2026-10-05 10:50:14,Saint Petersburg,electronics,mouse,1404.97,1
+2026-10-05 19:03:15,Kazan,clothes,jeans,3795.97,3
+2026-10-05 13:35:14,Novosibirsk,books,comics,425.35,3
+2026-10-05 20:12:46,kazan,books,novel,742.49,3
+2026-10-05 22:49:25,Saint Petersburg,clothes,jacket,8605.85,4
+2026-10-05 16:00:26, Kazan,electronics,keyboard,3928.41,4
+2026-10-05 11:35:23,Saint Petersburg,electronics,mouse,1451.38,2
+2026-10-05 16:22:20,Moscow,electronics,mouse,1452.76,1
+2026-10-05 18:06:40,Moscow,books,comics,482.23,3
+2026-10-05 21:46:37,Novosibirsk,books,comics,478.86,4
+2026-10-05 20:15:27,Moscow,clothes,jacket,7457.94,3
+2026-10-05 20:56:24,Kazan,electronics,headphones,6337.02,1
+2026-10-05 19:14:04,MOSCOW,books,textbook,1794.67,1
+2026-10-05 10:46:31,KAZAN,books,textbook,2056.42,2
+2026-10-05 18:18:27,Moscow,electronics,headphones,6015.85,3
+2026-10-05 20:10:53,Saint Petersburg,electronics,headphones,6390.59,2
+2026-10-05 19:06:31,SAINT PETERSBURG,books,textbook,1709.11,1
+2026-10-05 13:13:27,Saint Petersburg,clothes,jacket,7339.39,3
+2026-10-05 19:50:18,Kazan,electronics,keyboard,4077.95,4
+2026-10-05 16:26:12,Saint Petersburg,clothes,t-shirt,1350.60,3
+2026-10-05 11:33:49,Saint Petersburg,books,textbook,1885.92,2
+2026-10-05 08:05:44,Moscow,books,novel,621.91,1
+2026-10-05 19:41:17,Kazan,books,textbook,2057.68,2
+2026-10-05 13:48:42,Kazan,clothes,jeans,3435.56,2
+2026-10-05 22:11:50,Kazan,electronics,mouse,1369.14,1
+2026-10-05 10:52:40,kazan,clothes,jeans,3258.61,1
+2026-10-05 09:09:11,Moscow,clothes,t-shirt,1327.78,2
+2026-10-05 15:34:30,Novosibirsk,electronics,mouse,1363.56,3
+2026-10-05 10:13:11,Kazan,electronics,mouse,1512.29,1
+2026-10-06 18:25:01,Moscow,clothes,jeans,3405.78,4
+2026-10-06 22:00:26,Kazan,books,novel,662.20,3
+2026-10-06 19:36:00,Moscow,clothes,jeans,3773.10,3
+2026-10-06 08:26:12,Novosibirsk,electronics,mouse,1444.81,4
+2026-10-06 21:26:42,Kazan,clothes,jacket,8196.02,1
+2026-10-06 13:35:21,NOVOSIBIRSK,books,novel,720.86,3
+2026-10-06 15:49:50,Saint Petersburg,clothes,jacket,7754.53,3
+2026-10-06 08:04:59,Novosibirsk,electronics,keyboard,3982.24,2
+2026-10-06 18:42:46,Novosibirsk,electronics,headphones,6056.70,1
+2026-10-06 19:34:13, Kazan,clothes,jeans,3712.95,2
+2026-10-06 18:02:23,NOVOSIBIRSK,books,novel,660.00,3
+2026-10-06 17:33:59,Moscow,electronics,headphones,6000.66,1
+2026-10-06 20:52:03,Novosibirsk,books,novel,634.75,2
+2026-10-06 09:59:08,Kazan,clothes,jeans,3403.72,4
+2026-10-06 17:19:57,Novosibirsk,clothes,jeans,3751.71,2
+2026-10-06 14:14:20,novosibirsk,electronics,monitor,18806.32,1
+2026-10-06 11:50:15,moscow,books,comics,437.39,3
+2026-10-06 19:36:28,Novosibirsk,clothes,jeans,3427.08,3
+2026-10-06 14:19:09,Moscow,books,comics,430.55,3
+2026-10-06 09:32:55,Kazan,clothes,jeans,3237.88,4
+2026-10-06 19:50:19,Kazan,clothes,t-shirt,1384.26,4
+2026-10-06 18:52:46,Novosibirsk,books,comics,468.03,3
+2026-10-06 11:14:54,Moscow,electronics,keyboard,3850.75,1
+2026-10-06 13:16:40,Novosibirsk,electronics,mouse,1557.26,2
+2026-10-06 18:04:42,Moscow,clothes,jacket,8784.09,2
+2026-10-06 11:26:43,Saint Petersburg,electronics,mouse,1349.90,4
+2026-10-06 12:53:15,Saint Petersburg,electronics,monitor,19890.82,1
+2026-10-06 10:39:54,Saint Petersburg,books,textbook,1810.12,2
+2026-10-06 16:20:31,Novosibirsk,books,novel,706.91,4
+2026-10-06 22:55:07,kazan,clothes,t-shirt,1413.15,4
+2026-10-06 14:33:10,Kazan,clothes,t-shirt,1224.15,3
+2026-10-06 10:32:16,Saint Petersburg,books,textbook,2043.31,2
+2026-10-06 20:29:42,Kazan,clothes,jeans,3746.34,2
+2026-10-06 19:42:54,Kazan,books,comics,464.13,1
+2026-10-06 19:58:33,saint petersburg,books,textbook,1918.71,2
+2026-10-06 20:39:11,Moscow,clothes,jacket,8379.32,3
+2026-10-06 13:54:21,Moscow,books,novel,627.84,2
+2026-10-06 09:07:12,Saint Petersburg,electronics,headphones,6457.14,4
+2026-10-06 18:45:27,Saint Petersburg,books,comics,409.64,3
+2026-10-06 13:00:56,Kazan,books,comics,446.60,4
+2026-10-06 13:07:05,Kazan,electronics,monitor,20668.70,2
+2026-10-06 21:27:22,Moscow,books,comics,428.20,2
+2026-10-06 16:09:26, Saint Petersburg,electronics,headphones,6470.34,4
+2026-10-06 11:27:33,Saint Petersburg,electronics,headphones,6107.74,2
+2026-10-06 19:47:52,Kazan,books,comics,421.73,two
+2026-10-06 19:31:09,Kazan,clothes,t-shirt,1398.49,1
+2026-10-06 19:49:18,Kazan,electronics,monitor,19773.84,2
+2026-10-06 13:57:34,Moscow,clothes,jeans,3563.60,4
+2026-10-06 18:43:35,Moscow,electronics,keyboard,4106.53,4
+2026-10-06 09:50:01,Kazan,clothes,t-shirt,1246.60,3
+2026-10-06 13:31:28,Kazan,books,textbook,1737.75,3
+2026-10-06 19:09:40,Saint Petersburg,books,textbook,1770.15,3
+2026-10-06 18:34:24,Moscow,electronics,mouse,1603.28,4
+2026-10-06 16:19:15,Moscow,electronics,keyboard,3797.74,3
+2026-10-06 17:40:36,Novosibirsk,books,novel,708.77,1
+2026-10-06 09:53:26,Moscow,electronics,mouse,1591.53,2
+2026-10-06 20:27:17,Saint Petersburg,clothes,jacket,8006.97,2
+2026-10-06 18:27:15,Saint Petersburg,electronics,headphones,5895.61,1
+2026-10-06 08:07:57,MOSCOW,books,novel,624.47,1
+2026-10-06 21:02:56,Kazan,books,textbook,1775.09,1
+2026-10-06 21:00:15,Kazan,books,textbook,1897.69,4
+2026-10-06 19:36:31,Moscow,books,comics,466.66,2
+2026-10-06 12:26:59,Moscow,books,novel,750.75,2
+2026-10-06 20:54:29,Novosibirsk,clothes,jacket,8784.29,1
+2026-10-06 10:29:39,Kazan,books,comics,411.80,3
+2026-10-06 12:15:03,SAINT PETERSBURG,electronics,mouse,1477.56,3
+2026-10-06 13:20:14,Saint Petersburg,books,novel,705.38,3
+2026-10-06 19:33:58,Novosibirsk,electronics,headphones,5828.91,2
+2026-10-06 16:00:33,Saint Petersburg,books,novel,710.74,1
+2026-10-07 08:52:40,Kazan,books,novel,749.10,2
+2026-10-07 08:35:22,Moscow,clothes,t-shirt,1263.21,2
+2026-10-07 18:10:46,Kazan,books,novel,669.90,3
+2026-10-07 16:34:43,Novosibirsk,clothes,jeans,3191.28,4
+2026-10-07 19:05:16,Kazan,electronics,mouse,1598.37,4
+2026-10-07 13:28:01,Moscow,books,novel,748.20,3
+2026-10-07 16:57:42,Saint Petersburg,books,comics,473.44,2
+2026-10-07 10:31:46,Kazan,books,comics,483.67,3
+2026-10-07 09:12:58,Saint Petersburg,books,novel,683.30,2
+2026-10-07 17:48:16,Saint Petersburg,books,comics,466.19,2
+2026-10-07 15:26:42,Moscow,books,novel,643.01,4
+2026-10-07 11:41:13,Novosibirsk,electronics,headphones,5649.53,4
+2026-10-07 22:11:02,SAINT PETERSBURG,books,textbook,2065.60,1
+2026-10-07 22:27:34,Novosibirsk,books,textbook,1711.30,3
+2026-10-07 22:42:30,Kazan,electronics,mouse,1638.03,1
+2026-10-07 20:41:07,Moscow,books,textbook,1724.18,1
+2026-10-07 19:13:26,Kazan,clothes,jacket,7763.48,1
+2026-10-07 21:55:33,Novosibirsk,clothes,jacket,8145.15,2
+2026-10-07 17:43:51,Saint Petersburg,clothes,jeans,3371.84,4
+2026-10-07 14:01:49,Saint Petersburg,electronics,headphones,6040.81,1
+2026-10-07 19:17:20,Saint Petersburg,clothes,t-shirt,1376.72,1
+2026-10-07 22:10:54,Kazan,clothes,t-shirt,1276.25,1
+2026-10-07 21:46:28,Moscow,clothes,jacket,7712.99,3
+2026-10-07 19:38:07,Novosibirsk,books,comics,462.55,1
+2026-10-07 09:17:08,Saint Petersburg,books,novel,658.47,3
+2026-10-07 17:19:24,Novosibirsk,clothes,jeans,3565.60,4
+2026-10-07 19:46:29,Saint Petersburg,electronics,keyboard,3949.06,3
+2026-10-07 20:28:02,Saint Petersburg,books,comics,428.11,1
+2026-10-07 19:37:48,Moscow,electronics,headphones,5702.18,1
+2026-10-07 19:29:20,Novosibirsk,clothes,jeans,3313.99,4
+2026-10-07 10:14:54,moscow,clothes,t-shirt,1405.12,1
+2026-10-07 14:35:44,Moscow,clothes,jeans,3438.19,2
+2026-10-07 14:37:01,Moscow,electronics,headphones,6259.21,1
+2026-10-07 21:57:57,SAINT PETERSBURG,books,novel,730.40,1
+2026-10-07 12:37:36,Kazan,electronics,mouse,1464.07,2
+2026-10-07 08:28:39,KAZAN,electronics,keyboard,3836.95,two
+2026-10-07 20:35:49,Novosibirsk,electronics,headphones,6014.73,3
+2026-10-07 09:25:48,NOVOSIBIRSK,electronics,monitor,20711.72,1
+2026-10-07 21:39:48,Novosibirsk,books,comics,n/a,1
+2026-10-07 20:44:33,KAZAN,electronics,monitor,20493.54,3
+2026-10-07 17:28:33,Kazan,clothes,jeans,3455.22,3
+2026-10-07 13:26:57,Moscow,electronics,monitor,19912.01,3
+2026-10-07 18:26:38,NOVOSIBIRSK,electronics,keyboard,4181.82,2
+2026-10-07 16:04:58,Novosibirsk,clothes,jeans,3399.04,3
+2026-10-07 22:41:28,Kazan,books,novel,700.43,1
+2026-10-07 20:31:31, Moscow,clothes,jeans,3608.16,1
+2026-10-07 11:56:33,Novosibirsk,books,textbook,1910.03,4
+2026-10-07 08:07:25,Moscow,clothes,t-shirt,1393.73,1
+2026-10-07 21:55:46,Kazan,books,novel,664.98,2
+2026-10-07 16:24:01,Moscow,books,textbook,1962.32,3
+2026-10-07 09:28:07,Moscow,books,comics,411.36,1
+2026-10-07 15:09:45,Saint Petersburg,books,comics,456.53,3
+2026-10-07 11:46:55,Kazan,clothes,t-shirt,1213.87,3
+2026-10-07 14:46:11,Moscow,electronics,headphones,5658.46,4
+2026-10-07 08:09:29, Saint Petersburg,electronics,keyboard,3844.68,3
+2026-10-07 19:08:04,Kazan,electronics,mouse,1439.81,1
+2026-10-07 18:57:09,Saint Petersburg,clothes,jeans,3176.14,3
+2026-10-07 13:56:58, Novosibirsk,electronics,keyboard,,3
+2026-10-07 09:47:46,Saint Petersburg,clothes,t-shirt,1259.91,3
+2026-10-07 21:15:32,kazan,electronics,headphones,6169.38,4
+2026-10-07 11:02:46,Novosibirsk,books,textbook,1854.58,3
+2026-10-07 21:40:46,Saint Petersburg,books,comics,486.45,4
+2026-10-07 11:41:29,Kazan,clothes,t-shirt,1285.28,3
