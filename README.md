@@ -18,4 +18,4 @@
 | - | ----- | ---- |
 | 1 | [`homework1/`](homework1/) | Автоматизированное развёртывание HDFS: NameNode, Secondary NameNode, 3 DataNode |
 | 2 | [`homework2/`](homework2/) | Развёртывание YARN |
-
+| 3 | [`homework3/`](homework3/) | Развёртывание Apache |
