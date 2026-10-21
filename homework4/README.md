@@ -265,6 +265,19 @@ event_time,city,category,product,price,quantity
 
 ## Проверка работы
 
-<!-- сюда вставить скриншоты: вывод 03_run.sh (master: yarn, схемы, партиции),
-     вывод 04_check_hive.sh (запросы через beeline),
-     приложение hw4-sales-daily в веб-интерфейсе ResourceManager -->
+Начало вывода `03_run.sh`. Отчёт YARN показывает, что приложение `application_1792045180748_0015` принято в очередь `root.default`, ApplicationMaster запущен на `10.24.0.11` (`team-24-nn`), задача выполняется от пользователя `hadoop`. Сессия Spark работает с `master: yarn` и читает 441 строку из `hdfs://team-24-nn:9000/user/spark/input/sales.csv` — при чтении CSV все колонки имеют тип `string`. После приведения типов и очистки остаётся 431 строка: `event_time` стал `timestamp`, `price` — `double`, `quantity` — `integer`, появились вычисляемые колонки `sale_date` и `revenue`.
+
+<img width="739" height="628" alt="Снимок экрана — 2026-10-21 в 21 36 05" src="https://github.com/user-attachments/assets/ce51522e-5eb3-4e6c-aa8b-66f8d370cf27" />
+
+Конец вывода `03_run.sh` и проверка HDFS. Spark сохранил таблицу `shop.sales_daily` с партиционированием по `sale_date` — 7 партиций, с 1 по 7 октября. Ниже — первые 10 строк итоговой таблицы: агрегаты по городу и категории за 1 октября, названия городов нормализованы (`Saint Petersburg` вместо вариантов в разном регистре). В HDFS в каталоге таблицы 7 каталогов партиций `sale_date=...` и служебный файл `_SUCCESS`, которым Spark отмечает успешное завершение записи.
+
+<img width="883" height="612" alt="Снимок экрана — 2026-10-21 в 21 36 25" src="https://github.com/user-attachments/assets/68c4c771-17a6-4301-b098-0045da2f62f8" />
+
+Чтение таблицы стандартным клиентом Hive (`beeline`). В базе `shop` таблица `sales_daily`, созданная Spark, видна рядом с таблицами `orders` и `orders_raw` из ДЗ №3. Hive корректно читает её структуру — типы колонок и раздел `# Partition Information` с колонкой партиционирования `sale_date` — и видит все 7 партиций.
+
+<img width="755" height="598" alt="Снимок экрана — 2026-10-21 в 21 37 05" src="https://github.com/user-attachments/assets/af0b4f1c-475e-4f09-b887-4197616c6b83" />
+
+Запросы к данным через `beeline`. Итоги по дням: число заказов (в сумме 67 + 65 + 48 + 59 + 64 + 68 + 60 = 431, то есть ровно столько строк, сколько осталось после очистки в Spark) и выручка. Ниже — пять строк за 7 октября с наибольшей выручкой: запрос с условием `sale_date = '2026-10-07'` читает только одну партицию.
+
+<img width="1151" height="334" alt="Снимок экрана — 2026-10-21 в 21 37 27" src="https://github.com/user-attachments/assets/a946e189-65d5-4e59-b7de-59b53032d278" />
+
