@@ -30,7 +30,8 @@ SET hive.exec.dynamic.partition.mode=nonstrict;
 
 INSERT OVERWRITE TABLE orders PARTITION (order_date)
 SELECT order_id, customer, product, price, quantity, order_date
-FROM orders_raw;
+FROM orders_raw
+WHERE order_id IS NOT NULL;
 
 SHOW PARTITIONS orders;
 SELECT order_date, COUNT(*) AS orders_cnt FROM orders GROUP BY order_date;
