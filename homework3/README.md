@@ -151,7 +151,7 @@ order_id,order_date,customer,product,price,quantity
 
 В `load.sql` загрузка идёт в два этапа — это стандартный приём для Hive:
 
-1. **Таблица-источник `shop.orders_raw`** — внешняя (`EXTERNAL`) таблица поверх CSV-файла. Hive не копирует данные, а просто «накладывает» схему на файл в `/user/hive/raw/orders` и пропускает строку с заголовком (`skip.header.line.count`).
+1. **Таблица-источник `shop.orders_raw`** — внешняя (`EXTERNAL`) таблица поверх CSV-файла. Hive не копирует данные, а просто «накладывает» схему на файл в `/user/hive/raw/orders`. Для пропуска строки-заголовка задано свойство `skip.header.line.count`, но в этой версии Hive оно сработало не во всех случаях — подробнее ниже.
 
 2. **Целевая таблица `shop.orders`** — партиционированная по дате заказа (`PARTITIONED BY (order_date STRING)`) и хранящая данные в колоночном формате **Parquet**. Данные переносятся запросом с **динамическим партиционированием**:
 
@@ -160,8 +160,11 @@ order_id,order_date,customer,product,price,quantity
 
    INSERT OVERWRITE TABLE orders PARTITION (order_date)
    SELECT order_id, customer, product, price, quantity, order_date
-   FROM orders_raw;
+   FROM orders_raw
+   WHERE order_id IS NOT NULL;
    ```
+   
+   Условие `WHERE order_id IS NOT NULL` страхует от попадания в таблицу строки-заголовка CSV. В Hive 4.0.0-alpha-2 при выполнении запроса через MapReduce свойство `skip.header.line.count` не сработало, и заголовок загрузился как обычная строка с отдельной партицией `order_date=order_date`. Текст `order_id` не превращается в число, поэтому у заголовка `order_id` равен `NULL`, и фильтр его отсекает.
 
    Значение партиции не указывается вручную: Hive берёт его из последней колонки `SELECT` и сам раскладывает строки по партициям. Сколько разных дат в данных — столько партиций и появится. Запрос выполняется задачей MapReduce в YARN.
 
@@ -287,5 +290,6 @@ sudo -u hadoop /opt/hadoop/bin/hdfs dfs -rm -r -skipTrash /user/hive
 
 ## Проверка работы
 
-<!-- сюда вставить скриншоты: вывод 05_check.sh (два клиента и партиции),
-     веб-интерфейс HiveServer2 с сессиями, файлы партиций в веб-интерфейсе NameNode -->
+<img width="841" height="672" alt="Снимок экрана — 2026-10-21 в 20 29 35" src="https://github.com/user-attachments/assets/4d733717-4f6a-4d20-b3dc-9778b7bbc5fb" />
+
+Вывод скрипта `05_check.sh` после развёртывания: службы PostgreSQL, Metastore и HiveServer2 запущены; два клиента одновременно подключились к HiveServer2 и получили ответы — `client1` посчитал заказы и выручку по дням, `client2` вывел список партиций; в HDFS созданы четыре каталога партиций, а метаданные таблиц и партиций хранятся в PostgreSQL.
