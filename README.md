@@ -20,3 +20,9 @@
 | 2 | [`homework2/`](homework2/) | Развёртывание YARN |
 | 3 | [`homework3/`](homework3/) | Развёртывание Apache |
 | 4 | [`homework4/`](homework4/) | Apache Spark под управлением YARN |
+| 5 | [`homework5/`](homework5/) | Обработка данных в Spark на YARN |
+
+
+
+
+
